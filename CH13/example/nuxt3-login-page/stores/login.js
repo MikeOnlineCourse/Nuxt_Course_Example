@@ -22,12 +22,12 @@ export const useLogingStore = defineStore("login", () => {
     isLoading.value = true;
     try {
       // https://vue-lessons-api.vercel.app
-      const data = await $fetch("/auth/login", {
+      const res = await $fetch("/auth/login", {
         method: "POST",
         body: { username, password },
       });
       cookie.value = {
-        token: data.token,
+        token: res.data.token,
       };
 
       if (route.query.isOpen) {
