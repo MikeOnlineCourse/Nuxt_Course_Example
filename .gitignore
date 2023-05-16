@@ -1,0 +1,10 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+.DS_Store
+/CH10/exercise/nuxt3-i18n/google

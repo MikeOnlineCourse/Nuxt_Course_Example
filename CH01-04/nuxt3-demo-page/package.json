@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "overrides": {
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "nuxt": "^3.3.2"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.7",
+    "@popperjs/core": "^2.11.7",
+    "axios": "^1.3.5",
+    "dayjs": "^1.11.7",
+    "pinia": "^2.0.33",
+    "v-calendar": "^3.0.3"
+  }
+}
