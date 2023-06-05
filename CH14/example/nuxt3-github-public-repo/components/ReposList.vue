@@ -1,5 +1,7 @@
 <script setup>
 import { storeToRefs } from "pinia";
+import { useIndexStore } from "@/stores/index";
+import { useIntersectionObserver } from "@/composables/useIntersectionObserver";
 
 const store = useIndexStore();
 

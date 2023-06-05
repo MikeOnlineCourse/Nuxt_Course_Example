@@ -1,5 +1,7 @@
 <script setup>
 import { storeToRefs } from "pinia";
+import { useIndexStore } from "@/stores/index";
+import { useIntersectionObserver } from "@/composables/useIntersectionObserver";
 
 const store = useIndexStore();
 
@@ -9,12 +11,12 @@ const { state, fetchRepos } = store;
 
 const loadRef = ref(null);
 
-watch(isIntersecting, (newVal) => {
-  if (!newVal) return;
-  if (isLoadRepos.value) return;
-  if (state.userName === "") return;
-  fetchRepos();
-});
+// watch(isIntersecting, (newVal) => {
+//   if (!newVal) return;
+//   if (isLoadRepos.value) return;
+//   if (state.userName === "") return;
+//   fetchRepos();
+// });
 </script>
 
 <template>
